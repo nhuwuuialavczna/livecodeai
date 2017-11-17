@@ -10,7 +10,7 @@ function playStream(idVideoTag,stram){
 }
 
 // openStream().then(stream=>playStream('localStream',stream));
-const peer = new Peer({key: 'peerjs',host:'http://livecodeai.azurewebsites.net/',secure:true});
+const peer = new Peer({key: 'peerjs',host:'livecodeai.azurewebsites.net',secure:true,port:443});
 peer.on('open',id=>$("#yourid").append(id));
 
 $("#btnCall").on('click',function(){
